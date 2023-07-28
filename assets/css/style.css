@@ -1,0 +1,196 @@
+/* ==========================================================================
+   Global
+========================================================================== */
+
+:root{
+
+    /* Colors */
+
+    --main-bg-color: #202A44;
+    --second-bg-color: #8DC9AA;
+    --main-color: #CCFFE5;
+    --second-color: #27445C;
+    --third-color: #E1E1E1;
+
+    /* Box Shadows */
+
+    --shadow-color: 0deg 0% 1%;
+    --shadow-elevation-low:
+      0px 0.2px 0.2px hsl(var(--shadow-color) / 0.34),
+      0px 0.3px 0.3px -1.1px hsl(var(--shadow-color) / 0.37),
+      -0.1px 0.7px 0.8px -2.2px hsl(var(--shadow-color) / 0.39);
+    --shadow-elevation-medium:
+      0px 0.2px 0.2px hsl(var(--shadow-color) / 0.29),
+      -0.1px 0.5px 0.6px -0.6px hsl(var(--shadow-color) / 0.3),
+      -0.2px 0.9px 1.1px -1.1px hsl(var(--shadow-color) / 0.31),
+      -0.3px 1.9px 2.2px -1.7px hsl(var(--shadow-color) / 0.32),
+      -0.6px 3.6px 4.2px -2.2px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-high:
+      0px 0.2px 0.2px hsl(var(--shadow-color) / 0.27),
+      -0.2px 1px 1.2px -0.2px hsl(var(--shadow-color) / 0.27),
+      -0.3px 1.7px 2px -0.5px hsl(var(--shadow-color) / 0.28),
+      -0.4px 2.6px 3.1px -0.7px hsl(var(--shadow-color) / 0.28),
+      -0.6px 3.7px 4.4px -1px hsl(var(--shadow-color) / 0.29),
+      -0.9px 5.3px 6.2px -1.2px hsl(var(--shadow-color) / 0.3),
+      -1.2px 7.4px 8.7px -1.5px hsl(var(--shadow-color) / 0.3),
+      -1.7px 10.3px 12.1px -1.7px hsl(var(--shadow-color) / 0.31),
+      -2.3px 14px 16.5px -2px hsl(var(--shadow-color) / 0.31),
+      -3.1px 18.8px 22.2px -2.2px hsl(var(--shadow-color) / 0.32);
+}
+
+/* Custom Fonts */
+
+@font-face {
+    font-family: Ubuntu;
+    src: url('/assets/fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: Dancing;
+    src: url('/assets/fonts/DancingScript-Regular.ttf');
+}
+
+/* Custom Animations */
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+@keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+}
+
+@keyframes fadeInAndOut {
+    0% {
+      opacity:0;
+    }
+    50% {
+        opacity:1;
+      }
+    100% {
+      opacity:0;
+    }
+}
+
+/* ==========================================================================
+   Body and Overall Grid Container Styles
+========================================================================== */
+
+.grid-container header, main, footer {
+    font-family: Ubuntu;
+}
+
+body {
+    background-color: var(--second-bg-color);
+}
+
+/* ==========================================================================
+   Header Styles
+========================================================================== */
+
+header {
+    background-color: var(--main-bg-color);
+}
+
+#name {
+    color: var(--main-color);
+    font-size: clamp(2rem, 15vw + 1rem, 5rem);
+    font-family: Dancing;
+}
+
+#heart {
+    animation-name: fadeInAndOut;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+/* Navigation Link Styles
+========================================================================== */
+
+.nav-flex-container li {
+    color: var(--third-color);
+    font-size: clamp(1.1rem, 15vw + 1rem, 2.5rem);
+}
+
+.nav-flex-container li:hover {
+    text-decoration: underline;
+}
+
+/* Hero Image Source & Styles
+========================================================================== */
+
+#hero {
+    background-image: url('/assets/images/hero.JPG');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: solid var(--main-bg-color) 1rem;
+}
+
+/* Profile Picture
+========================================================================== */
+
+#hero img {
+    border: solid var(--main-bg-color) 1rem;
+    border-radius: 50%;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+/* ==========================================================================
+   Main Styles
+========================================================================== */
+
+h2 {
+    font-size: 3rem;
+    color: var(--second-color);
+}
+
+/* Projects Section
+========================================================================== */
+
+#projects {
+    background-image: url('/assets/images/section-bgs/poly-grid.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid var(--main-bg-color) 0.25rem;
+    border-radius: 3rem;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+#projects-card-title {
+    color: var(--third-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.project-card h3 {
+    color: var(--third-color);
+    font-size: 2rem;
+}
+
+/* Contact Section
+========================================================================== */
+
+#contact {
+    background-image: url('/assets/images/section-bgs/portfolio-bg1.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 8rem;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+footer {
+    background-color: var(--main-bg-color);
+}
