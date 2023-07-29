@@ -200,12 +200,17 @@ h2 {
 ========================================================================== */
 
 #contact {
-    background-image: url('../images/section-bgs/portfolio-bg1.svg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: linear-gradient(
+    to bottom left,
+    var(--main-bg-color),
+    var(--third-color)
+    );
     border-radius: 8rem;
     box-shadow: var(--shadow-elevation-high);
+}
+
+#contact h2 {
+    color: var(--third-color);
 }
 
 /* Contact Section Icon Scaling */
@@ -214,13 +219,12 @@ h2 {
     width: clamp(125px, 10vw + 1rem, 200px);
 }
 
+/* Tech Section
+========================================================================== */
 
 #tech h2 {
     text-align: center;
 }
-
-/* Tech Section
-========================================================================== */
 
 /* Tech Section Icon Scaling */
 
