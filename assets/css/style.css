@@ -172,6 +172,7 @@ h2 {
     font-size: var(--normal-size);
     text-align: left;
     color: var(--fourth-color);
+    line-height: 1.25;
 }
 
 /* Projects Section
