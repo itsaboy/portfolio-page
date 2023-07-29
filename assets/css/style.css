@@ -104,7 +104,7 @@ header {
 
 #name {
     color: var(--main-color);
-    font-size: clamp(2rem, 15vw + 1rem, 5rem);
+    font-size: clamp(32px, 15vw + 1rem, 80px);
     font-family: Dancing;
 }
 
@@ -119,7 +119,7 @@ header {
 
 .nav-flex-container li {
     color: var(--third-color);
-    font-size: clamp(1.1rem, 15vw + 1rem, 2.5rem);
+    font-size: clamp(8px, 1vw + 1rem, 32px);
 }
 
 .nav-flex-container li:hover {
@@ -151,7 +151,7 @@ header {
 ========================================================================== */
 
 h2 {
-    font-size: 3rem;
+    font-size: clamp(32px, 3vw + 1rem, 48px);
     color: var(--second-color);
 }
 
@@ -177,6 +177,14 @@ h2 {
 .project-card h3 {
     color: var(--third-color);
     font-size: 2rem;
+}
+
+.project-card img {
+    border: solid var(--second-bg-color) 0.5rem;
+}
+
+.project-card img:hover {
+    border: dashed var(--second-bg-color) 0.5rem;
 }
 
 /* Contact Section

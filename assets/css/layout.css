@@ -8,7 +8,7 @@
     "header"
     "main"
     "footer";
-    grid-template-rows: 4fr 5fr 6rem;
+    grid-template-rows: 4fr 4fr 6rem;
     grid-template-columns: 1fr;
     height: 250vh;
     gap: 3rem; 
@@ -193,11 +193,11 @@
 /* Projects Images Sizing */
 
 .project-card img {
-    width: clamp(150px, 15vw + 1rem, 400px);
+    width: clamp(200px, 15vw + 1rem, 400px);
 }
 
 #void-warrior img {
-    width: clamp(250px, 25vw + 1rem, 600px);
+    width: clamp(225px, 25vw + 1rem, 600px);
 }
 
 /* Contact Section Grid Layout
@@ -207,8 +207,8 @@
     display: grid;
     grid-template-areas:
     "contact-heading contact-heading"
-    "email github"
-    "linkedin twitter";
+    "email twitter"
+    "github linkedin";
     grid-template-rows: 2fr 1fr 2fr;
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
@@ -216,6 +216,10 @@
     margin: auto;
     place-items: center;
     text-align: center;
+}
+
+.contact-grid-container .contact-link {
+    place-self: start center;
 }
 
 /* Contact Section Grid Sub-item IDs */
@@ -240,17 +244,35 @@
     grid-area: twitter;
 }
 
-/* Sub Section Flex Layout
+/* Contact Section Icon Scaling */
+
+.contact-link img {
+    width: clamp(100px, 10vw + 1rem, 200px);
+}
+
+/* Tech Section Flex Layout
 ========================================================================== */
 
-.section-flex-container {
+.tech-flex-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1 1 0;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    /* note: this container wraps the About and Technologies sections */
+    gap: 3rem;
+    padding-bottom: 1rem;
+}
+
+#tech h2 {
+    text-align: center;
+}
+
+/* Tech Section Icon Scaling */
+
+.tech-flex-container img {
+    width: clamp(50px, 10vw + 1rem, 150px);
 }
 
 /* ==========================================================================
