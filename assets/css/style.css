@@ -199,6 +199,11 @@ h2 {
     box-shadow: var(--shadow-elevation-high);
 }
 
+/* ==========================================================================
+   Footer Styles
+========================================================================== */
+
 footer {
     background-color: var(--main-bg-color);
+    color: var(--third-color);
 }

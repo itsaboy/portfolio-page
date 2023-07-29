@@ -48,6 +48,8 @@
     grid-area: name;
     place-self: center start;
     padding-left: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
 }
 
 #navlinks {
