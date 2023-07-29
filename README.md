@@ -9,7 +9,7 @@ A portfolio page that directs the user to various projects created by Rennala, g
 ![screen3](https://github.com/itsaboy/portfolio-page/assets/29829816/474b2e8c-59d8-4620-9584-533089b73daf)
 
 ## Web Page Link:
-[Renalla's Portfolio Page](https://itsaboy.github.io/portfolio-page/)
+[Renalla's Portfolio Page](https://itsaboy.github.io/rennalas-portfolio-page/)
 
 ## Sources:
 ### Custom Fonts
