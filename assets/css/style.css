@@ -42,12 +42,12 @@
 
 @font-face {
     font-family: Ubuntu;
-    src: url('/assets/fonts/Ubuntu-Regular.ttf');
+    src: url('../fonts/Ubuntu-Regular.ttf');
 }
 
 @font-face {
     font-family: Dancing;
-    src: url('/assets/fonts/DancingScript-Regular.ttf');
+    src: url('../fonts/DancingScript-Regular.ttf');
 }
 
 /* Custom Animations */
@@ -130,7 +130,7 @@ header {
 ========================================================================== */
 
 #hero {
-    background-image: url('/assets/images/hero.JPG');
+    background-image: url('../images/hero.JPG');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -159,7 +159,7 @@ h2 {
 ========================================================================== */
 
 #projects {
-    background-image: url('/assets/images/section-bgs/poly-grid.svg');
+    background-image: url('../images/section-bgs/poly-grid.svg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -191,7 +191,7 @@ h2 {
 ========================================================================== */
 
 #contact {
-    background-image: url('/assets/images/section-bgs/portfolio-bg1.svg');
+    background-image: url('../images/section-bgs/portfolio-bg1.svg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
