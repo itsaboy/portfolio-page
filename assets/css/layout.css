@@ -10,7 +10,7 @@
     "footer";
     grid-template-rows: 4fr 4fr 6rem;
     grid-template-columns: 1fr;
-    height: 250vh;
+    height: 100vh;
     gap: 3rem; 
 }
 
@@ -91,12 +91,12 @@
     "about projects"
     "contact projects"
     "tech tech";
-    grid-template-rows: repeat(2, 3fr) 1fr;
+    grid-template-rows: repeat(2, 2fr) 1fr;
     grid-template-columns: 2fr 3fr;
     height: 100%;
     width: 90%;
-    margin: auto;
-    gap: 3rem;
+    margin: 0 auto;
+    gap: 5rem;
 }
 
 /* Main Grid Sub-item IDs */
@@ -117,7 +117,7 @@
     grid-area: tech;
 }
 
-/* About Section Grid Layout
+/* About Me Section Grid Layout
 ========================================================================== */
 
 .about-grid-container {
@@ -125,7 +125,7 @@
     grid-template-areas:
     "about-card-title"
     "about-card-text1"
-    " about-card-text2";
+    "about-card-text2";
     grid-template-rows: 10rem 1fr 1fr;
     grid-template-columns: 1fr;
     height: 100%;
@@ -136,7 +136,7 @@
     text-align: center;
 }
 
-/* About Section Grid Sub-item IDs */
+/* About Me Section Grid Sub-item IDs */
 
 #about-card-title {
     grid-area: about-card-title;
@@ -192,16 +192,6 @@
     grid-area: horiseon;
 }
 
-/* Projects Images Sizing */
-
-.project-card img {
-    width: clamp(200px, 15vw + 1rem, 400px);
-}
-
-#void-warrior img {
-    width: clamp(225px, 25vw + 1rem, 600px);
-}
-
 /* Contact Section Grid Layout
 ========================================================================== */
 
@@ -246,12 +236,6 @@
     grid-area: twitter;
 }
 
-/* Contact Section Icon Scaling */
-
-.contact-link img {
-    width: clamp(100px, 10vw + 1rem, 200px);
-}
-
 /* Tech Section Flex Layout
 ========================================================================== */
 
@@ -264,17 +248,7 @@
     align-items: center;
     height: 100%;
     gap: 3rem;
-    padding-bottom: 1rem;
-}
-
-#tech h2 {
-    text-align: center;
-}
-
-/* Tech Section Icon Scaling */
-
-.tech-flex-container img {
-    width: clamp(50px, 10vw + 1rem, 150px);
+    padding-bottom: 3rem;
 }
 
 /* ==========================================================================

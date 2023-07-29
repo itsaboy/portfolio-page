@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Global
+   Variables
 ========================================================================== */
 
 :root{
@@ -11,6 +11,14 @@
     --main-color: #CCFFE5;
     --second-color: #27445C;
     --third-color: #E1E1E1;
+    --fourth-color: #060606;
+
+    /* Font Sizes */
+
+    --largest-size: clamp(1rem, 6vh + 1rem, 10rem);
+    --larger-size: clamp(1rem, 3vh + 1rem, 6rem);
+    --large-size: clamp(1rem, 1.25vh + 1rem, 4rem);
+    --normal-size: clamp(0.5rem, 1vw + 1rem, 2rem);
 
     /* Box Shadows */
 
@@ -38,7 +46,8 @@
       -3.1px 18.8px 22.2px -2.2px hsl(var(--shadow-color) / 0.32);
 }
 
-/* Custom Fonts */
+/* Custom Fonts
+========================================================================== */
 
 @font-face {
     font-family: Ubuntu;
@@ -50,7 +59,8 @@
     src: url('../fonts/DancingScript-Regular.ttf');
 }
 
-/* Custom Animations */
+/* Custom Animations
+========================================================================== */
 
 @keyframes fadeIn {
     0% {
@@ -104,7 +114,7 @@ header {
 
 #name {
     color: var(--main-color);
-    font-size: clamp(32px, 15vw + 1rem, 80px);
+    font-size: var(--largest-size);
     font-family: Dancing;
 }
 
@@ -119,7 +129,7 @@ header {
 
 .nav-flex-container li {
     color: var(--third-color);
-    font-size: clamp(8px, 1vw + 1rem, 32px);
+    font-size: var(--large-size);
 }
 
 .nav-flex-container li:hover {
@@ -151,8 +161,17 @@ header {
 ========================================================================== */
 
 h2 {
-    font-size: clamp(32px, 3vw + 1rem, 48px);
+    font-size: var(--larger-size);
     color: var(--second-color);
+}
+
+/* About Me Section
+========================================================================== */
+
+.about-text {
+    font-size: var(--normal-size);
+    text-align: left;
+    color: var(--fourth-color);
 }
 
 /* Projects Section
@@ -179,8 +198,15 @@ h2 {
     font-size: 2rem;
 }
 
+/* Projects Images */
+
 .project-card img {
+    width: clamp(200px, 15vw + 1rem, 400px);
     border: solid var(--second-bg-color) 0.5rem;
+}
+
+#void-warrior img {
+    width: clamp(225px, 25vw + 1rem, 600px);
 }
 
 .project-card img:hover {
@@ -199,6 +225,26 @@ h2 {
     box-shadow: var(--shadow-elevation-high);
 }
 
+/* Contact Section Icon Scaling */
+
+.contact-link img {
+    width: clamp(125px, 10vw + 1rem, 200px);
+}
+
+
+#tech h2 {
+    text-align: center;
+}
+
+/* Tech Section
+========================================================================== */
+
+/* Tech Section Icon Scaling */
+
+.tech-flex-container img {
+    width: clamp(50px, 10vw + 1rem, 150px);
+}
+
 /* ==========================================================================
    Footer Styles
 ========================================================================== */
@@ -206,4 +252,12 @@ h2 {
 footer {
     background-color: var(--main-bg-color);
     color: var(--third-color);
+}
+
+.footer-flex-container img {
+    width: clamp(25px, 6vw + 1rem, 75px);
+}
+
+.footer-flex-container a:hover {
+    text-decoration: underline;
 }
