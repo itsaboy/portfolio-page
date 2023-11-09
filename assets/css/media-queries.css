@@ -3,61 +3,57 @@
 ========================================================================== */
 
 @media only screen and (max-width: 2000px) {
-
-/*
+  /*
    Main Grid Layout
 ========================================================================== */
 
-    .main-grid-container {
-        display: grid;
-        grid-template-areas:
-        "about projects"
-        "contact tech";
-        grid-template-rows: 2fr 1fr;
-        grid-template-columns: 2fr 3fr;
-    }
-
-} 
+  .main-grid-container {
+    display: grid;
+    grid-template-areas:
+      "about projects"
+      "contact tech";
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 2fr 3fr;
+  }
+}
 
 /* ==========================================================================
    Screen Width Below 1000px
 ========================================================================== */
 
 @media only screen and (max-width: 1275px) {
-
-    /* Header Grid Layout
+  /* Header Grid Layout
 ========================================================================== */
 
-    .header-grid-container {
-        grid-template-areas:
-        "name"
-        "navlinks"
-        "hero";
-        grid-template-rows: 1fr 1fr 7fr;
-        grid-template-columns: 1fr;
-    }
+  .header-grid-container {
+    grid-template-areas:
+      "name"
+      "navlinks"
+      "hero";
+    grid-template-rows: 1fr 1fr 7fr;
+    grid-template-columns: 1fr;
+  }
 
-    #name {
-        place-self: center;
-        padding-left: 1rem;
-    }
+  #name {
+    place-self: center;
+    padding-left: 1rem;
+  }
 
-/* Projects Section Grid Layout
+  /* Projects Section Grid Layout
 ========================================================================== */
 
-    .projects-grid-container {
-        grid-template-areas:
-        "projects-card-title"
-        "void-warrior"
-        "wheel-strategy"
-        "volume-calc"
-        "reseller-tool"
-        "horiseon";
-        grid-template-rows: 10rem repeat(5, 1fr);
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }    
-
+  .projects-grid-container {
+    grid-template-areas:
+      "projects-card-title"
+      "snap-to-it"
+      "void-warrior"
+      "volume-calc"
+      "reseller-tool"
+      "horiseon";
+    grid-template-rows: 10rem repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 /* ==========================================================================
@@ -65,22 +61,20 @@
 ========================================================================== */
 
 @media only screen and (max-width: 950px) {
-
-/*
+  /*
    Main Grid Layout
 ========================================================================== */
 
-    .main-grid-container {
-        display: grid;
-        grid-template-areas:
-        "about"
-        "projects"
-        "contact"
-        "tech";
-        grid-template-rows: 2fr 5fr 2fr 1fr;
-        grid-template-columns: 1fr;
-    }
-
+  .main-grid-container {
+    display: grid;
+    grid-template-areas:
+      "about"
+      "projects"
+      "contact"
+      "tech";
+    grid-template-rows: 2fr 5fr 2fr 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ==========================================================================
@@ -88,23 +82,21 @@
 ========================================================================== */
 
 @media only screen and (max-width: 576px) {
-
-    /* Contact Section Grid Layout
+  /* Contact Section Grid Layout
 ========================================================================== */
 
-    .contact-grid-container {
-        grid-template-areas:
-        "contact-heading"
-        "email"
-        "twitter"
-        "github"
-        "linkedin";
-        grid-template-rows: 2fr repeat(4, 1fr);
-        grid-template-columns: 1fr;
-    }
+  .contact-grid-container {
+    grid-template-areas:
+      "contact-heading"
+      "email"
+      "twitter"
+      "github"
+      "linkedin";
+    grid-template-rows: 2fr repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
 
-    .contact-grid-container .contact-link {
-        place-self: start center;
-    }
-
+  .contact-grid-container .contact-link {
+    place-self: start center;
+  }
 }

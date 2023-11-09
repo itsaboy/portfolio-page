@@ -3,29 +3,29 @@
 ========================================================================== */
 
 .grid-container {
-    display: grid;
-    grid-template-areas:
+  display: grid;
+  grid-template-areas:
     "header"
     "main"
     "footer";
-    grid-template-rows: 4fr 4fr 6rem;
-    grid-template-columns: 1fr;
-    height: 100vh;
-    gap: 3rem; 
+  grid-template-rows: 4fr 4fr 6rem;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  gap: 3rem;
 }
 
 /* Overall Grid Sub-item IDs */
 
 #header {
-    grid-area: header;
+  grid-area: header;
 }
 
 #main {
-    grid-area: main;
+  grid-area: main;
 }
 
 #footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 /* ==========================================================================
@@ -33,52 +33,52 @@
 ========================================================================== */
 
 .header-grid-container {
-    display: grid;
-    grid-template-areas:
+  display: grid;
+  grid-template-areas:
     "name navlinks"
     "hero hero";
-    grid-template-rows: 1fr 7fr;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%;
+  grid-template-rows: 1fr 7fr;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
 }
 
 /* Header Grid Sub-item IDs */
 
 #name {
-    grid-area: name;
-    place-self: center start;
-    padding-left: 3rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.5rem;
+  grid-area: name;
+  place-self: center start;
+  padding-left: 3rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.5rem;
 }
 
 #navlinks {
-    grid-area: navlinks;
+  grid-area: navlinks;
 }
 
 #hero {
-    grid-area: hero;
-    display: grid;
+  grid-area: hero;
+  display: grid;
 }
 
 #hero img {
-    width: clamp(200px, 35vw + 1rem, 600px);
-    place-self: center;
+  width: clamp(200px, 35vw + 1rem, 600px);
+  place-self: center;
 }
 
 /* Navigation Links Flex Layout
 ========================================================================== */
 
 .nav-flex-container {
-    display: flex;
-    flex: 1 1 0;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  flex: 1 1 0;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
 }
 
 #navlinks ul {
-    height: 100%;
+  height: 100%;
 }
 
 /* ==========================================================================
@@ -86,169 +86,169 @@
 ========================================================================== */
 
 .main-grid-container {
-    display: grid;
-    grid-template-areas:
+  display: grid;
+  grid-template-areas:
     "about projects"
     "contact projects"
     "tech tech";
-    grid-template-rows: repeat(2, 2fr) 1fr;
-    grid-template-columns: 2fr 3fr;
-    height: 100%;
-    width: 90%;
-    margin: 0 auto;
-    gap: 5rem;
+  grid-template-rows: repeat(2, 2fr) 1fr;
+  grid-template-columns: 2fr 3fr;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  gap: 5rem;
 }
 
 /* Main Grid Sub-item IDs */
 
 #about {
-    grid-area: about;
+  grid-area: about;
 }
 
 #projects {
-    grid-area: projects;
+  grid-area: projects;
 }
 
 #contact {
-    grid-area: contact;
+  grid-area: contact;
 }
 
 #tech {
-    grid-area: tech;
+  grid-area: tech;
 }
 
 /* About Me Section Grid Layout
 ========================================================================== */
 
 .about-grid-container {
-    display: grid;
-    grid-template-areas:
+  display: grid;
+  grid-template-areas:
     "about-card-title"
     "about-card-text1"
     "about-card-text2";
-    grid-template-rows: 10rem 1fr 1fr;
-    grid-template-columns: 1fr;
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    gap: 1rem;
-    place-items: center;
-    text-align: center;
+  grid-template-rows: 10rem 1fr 1fr;
+  grid-template-columns: 1fr;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  gap: 1rem;
+  place-items: center;
+  text-align: center;
 }
 
 /* About Me Section Grid Sub-item IDs */
 
 #about-card-title {
-    grid-area: about-card-title;
+  grid-area: about-card-title;
 }
 
 #about-card-text1 {
-    grid-area: about-card-text1;
+  grid-area: about-card-text1;
 }
 
 #about-card-text2 {
-    grid-area: about-card-text2;
+  grid-area: about-card-text2;
 }
 
 /* Projects Section Grid Layout
 ========================================================================== */
 
 .projects-grid-container {
-    display: grid;
-    grid-template-areas:
+  display: grid;
+  grid-template-areas:
     "projects-card-title projects-card-title"
-    "void-warrior void-warrior"
-    "wheel-strategy volume-calc"
+    "snap-to-it snap-to-it"
+    "void-warrior volume-calc"
     "reseller-tool horiseon";
-    grid-template-rows: 10rem 1fr 1fr 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    gap: 3rem;
-    place-items: center;
-    text-align: center;
+  grid-template-rows: 10rem 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  gap: 3rem;
+  place-items: center;
+  text-align: center;
 }
 
 /* Projects Section Grid Sub-item IDs */
 
 #projects-card-title {
-    grid-area: projects-card-title;
+  grid-area: projects-card-title;
 }
 
 #void-warrior {
-    grid-area: void-warrior;
+  grid-area: void-warrior;
 }
 
-#wheel-strategy {
-    grid-area: wheel-strategy;
+#snap-to-it {
+  grid-area: snap-to-it;
 }
 
 #reseller-tool {
-    grid-area: reseller-tool;
+  grid-area: reseller-tool;
 }
 
 #horiseon {
-    grid-area: horiseon;
+  grid-area: horiseon;
 }
 
 /* Contact Section Grid Layout
 ========================================================================== */
 
 .contact-grid-container {
-    display: grid;
-    grid-template-areas:
+  display: grid;
+  grid-template-areas:
     "contact-heading contact-heading"
     "email twitter"
     "github linkedin";
-    grid-template-rows: 2fr 1fr 2fr;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    place-items: center;
-    text-align: center;
+  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  place-items: center;
+  text-align: center;
 }
 
 .contact-grid-container .contact-link {
-    place-self: start center;
+  place-self: start center;
 }
 
 /* Contact Section Grid Sub-item IDs */
 
 #contact-heading {
-    grid-area: contact-heading;
+  grid-area: contact-heading;
 }
 
 #email {
-    grid-area: email;
+  grid-area: email;
 }
 
 #github {
-    grid-area: github;
+  grid-area: github;
 }
 
 #linkedin {
-    grid-area: linkedin;
+  grid-area: linkedin;
 }
 
 #twitter {
-    grid-area: twitter;
+  grid-area: twitter;
 }
 
 /* Tech Section Flex Layout
 ========================================================================== */
 
 .tech-flex-container {
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 0;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    gap: 3rem;
-    padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  gap: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* ==========================================================================
@@ -256,9 +256,9 @@
 ========================================================================== */
 
 .footer-flex-container {
-    display: flex;
-    flex: 1 1 0;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  flex: 1 1 0;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
 }

@@ -1,151 +1,299 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <title>Rennala's Portfolio Page</title>
+    <meta
+      name="description"
+      content="A portfolio page for the world-renown kitty web developer Rennala"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media-queries.css" />
+  </head>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible">
-        <title>Rennala's Portfolio Page</title>
-        <meta name="description" content="A portfolio page for the world-renown kitty web developer Rennala">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/css/reset.css">
-        <link rel="stylesheet" href="./assets/css/layout.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/media-queries.css">
-    </head>
-
-    <body>
-        <!--grid container for overall page-->
-        <div class="grid-container">
-            <!--Header-->
-            <header id="header">
-                <!--grid container for header-->
-                <div class="header-grid-container">
-                    <h1 id="name">Rennala <span id="heart">❤️</span></h1>
-                    <nav id="navlinks">
-                        <ul>
-                            <!--flex container for navigation links-->
-                            <div class="nav-flex-container">
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="#tech">Tech</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </div>
-                        </ul>
-                    </nav>
-                    <div id="hero">
-                        <img src="./assets/images/cat.jpg" alt="profile picture of rennala the kitty">
-                    </div>
-                </div>
-            </header>
-            <!--Main-->
-            <main id="main">
-                <!--grid container for main-->
-                <div class="main-grid-container">
-                    <!--About Section-->
-                    <section id="about">
-                        <div class="about-grid-container">
-                            <h2 id="about-card-title">About Me</h2>
-                            <p class="about-text" id="about-card-text1">
-                                My name is Rennala, and I am a six-month-old kitty looking to get my paw in the door of the development field. Despite being so young, my skill set is vast and includes experience working with various front and back-end technologies as well as cloud services and web design applications. A small sample of both personal and professional projects can be accessed via the "Projects" section of this page.
-                            </p>
-                            <p class="about-text" id="about-card-text2">
-                                I'm sure that my expertise as well as my personality would be a great benefit to your business. Whether it's refactoring old code, starting new projects for clients, or finding and fixing bugs... as long as I get treats and petted I can promise 100% commitment to the job at hand!
-                            </p>
-                        </div>
-                    </section>
-                    <!--Projects Section-->
-                    <section id="projects">
-                        <div class="projects-grid-container">
-                            <h2 id="projects-card-title">Projects</h2>
-                            <div class="project-card" id="void-warrior">
-                                <h3>Void Warrior</h3>
-                                <br>
-                                <a href="https://itsaboy.github.io/local-planting-planner/" target="_blank">
-                                    <img src="./assets/images/projects/LPP.png" alt="local planting planner">
-                                </a>
-                            </div>
-                            <div class="project-card" id="wheel-strategy">
-                                <h3>Void Warrior</h3>
-                                <br>
-                                <a href="https://voidwarrior.com/" target="_blank">
-                                    <img src="./assets/images/projects/void-warrior.png" alt="void warrior jrpg video game">
-                                </a>
-                            </div>
-                            <div class="project-card" id="volume-calc">
-                                <h3>Volume Calculator</h3>
-                                <br>
-                                <a href="https://itsaboy.github.io/Volume-Calculator/" target="_blank">
-                                    <img src="./assets/images/projects/volume-calc.png" alt="daily and weekly lifting volume calculator">
-                                </a>
-                            </div>
-                            <div class="project-card" id="reseller-tool">
-                                <h3>Reseller Profit Tool</h3>
-                                <br>
-                                <a href="https://itsaboy.github.io/caro-calc/" target="_blank">
-                                    <img src="./assets/images/projects/reseller-tool.png" alt="profit calculator for resellers">
-                                </a>
-                            </div>
-                            <div class="project-card" id="horiseon">
-                                <h3>Horiseon Page</h3>
-                                <br>
-                                <a href="https://itsaboy.github.io/horiseon-landing-page/" target="_blank">
-                                    <img src="./assets/images/projects/horiseon.png" alt="landing page for horiseon social solutions services">
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                    <!--Contact Section-->
-                    <section id="contact">
-                        <div class="contact-grid-container">
-                            <h2 id="contact-heading">Contact Me</h2>
-                            <a class="contact-link" id="email" href="https://accounts.google.com/v3/signin/identifier?Email=example%40domain.com&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2Fexample%40domain.com&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1442105589%3A1690599736381419" target="_blank">
-                                <img src="./assets/images/tech-icons/gmail-name.svg" alt="gmail">
-                            </a>
-                            <a class="contact-link" id="twitter" href="https://help.twitter.com/en/using-twitter/create-twitter-account" target="_blank">
-                                <img src="./assets/images/tech-icons/twitter-name.svg" alt="twitter">
-                            </a>
-                            <a class="contact-link" id="github-link" href="https://github.com/" target="_blank">
-                                <img src="./assets/images/tech-icons/github-name.svg" alt="github">
-                            </a>
-                            <a class="contact-link" id="linkedin" href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank">
-                                <img src="./assets/images/tech-icons/linkedin-name.svg" alt="linkedin">
-                            </a>
-                        </div>
-                    </section>
-                    <!--Technologies Section-->
-                    <section id="tech">
-                        <h2>Technologies</h2>
-                        <br>
-                        <div class="tech-flex-container">
-                            <img class="icon" id="html" src="./assets/images/tech-icons/w3_html5-name.svg" alt="hyper text markup language">
-                            <img class="icon" id="css" src="./assets/images/tech-icons/w3_css-name.svg" alt="cascading style sheet">
-                            <img class="icon" id="js" src="./assets/images/tech-icons/javascript-name.svg" alt="javascript">
-                            <img class="icon" id="node" src="./assets/images/tech-icons/nodejs-name.svg" alt="node">
-                            <img class="icon" id="exp" src="./assets/images/tech-icons/expressjs-name.svg" alt="express">
-                            <img class="icon" id="electron" src="./assets/images/tech-icons/electronjs-name.svg" alt="electron">
-                            <img class="icon" id="python" src="./assets/images/tech-icons/python-name.svg" alt="python">
-                            <img class="icon" id="linux" src="./assets/images/tech-icons/linux-name.svg" alt="linux">
-                            <img class="icon" id="git" src="./assets/images/tech-icons/git-scm-name.svg" alt="git">
-                            <img class="icon" id="github" src="./assets/images/tech-icons/github-name.svg" alt="github">
-                            <img class="icon" id="docker" src="./assets/images/tech-icons/docker-name.svg" alt="docker">
-                            <img class="icon" id="aws" src="./assets/images/tech-icons/amazon_aws-name.svg" alt="amazon web services">
-                            <img class="icon" id="unity" src="./assets/images/tech-icons/unity3d-name.svg" alt="unity">
-                            <img class="icon" id="godot" src="./assets/images/tech-icons/godotengine-name.svg" alt="godot">
-                            <img class="icon" id="figma" src="./assets/images/tech-icons/figma-name.svg" alt="figma">
-                        </div>
-                    </section>
-                </div>
-            </main>
-            <!--Footer-->
-            <footer id="footer">
-                <div class="footer-flex-container">
-                    <img class="icon" src="./assets/images/kitty-icon.svg" alt="icon with an R overlapping a heart">
-                    <a href="#header">Back to Top</a>
-                </div>
-            </footer>
+  <body>
+    <!--grid container for overall page-->
+    <div class="grid-container">
+      <!--Header-->
+      <header id="header">
+        <!--grid container for header-->
+        <div class="header-grid-container">
+          <h1 id="name">Rennala <span id="heart">❤️</span></h1>
+          <nav id="navlinks">
+            <ul>
+              <!--flex container for navigation links-->
+              <div class="nav-flex-container">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#tech">Tech</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </div>
+            </ul>
+          </nav>
+          <div id="hero">
+            <img
+              src="./assets/images/cat.jpg"
+              alt="profile picture of rennala the kitty"
+            />
+          </div>
         </div>
-
-    </body>
-
+      </header>
+      <!--Main-->
+      <main id="main">
+        <!--grid container for main-->
+        <div class="main-grid-container">
+          <!--About Section-->
+          <section id="about">
+            <div class="about-grid-container">
+              <h2 id="about-card-title">About Me</h2>
+              <p class="about-text" id="about-card-text1">
+                My name is Rennala, and I am a six-month-old kitty looking to
+                get my paw in the door of the development field. Despite being
+                so young, my skill set is vast and includes experience working
+                with various front and back-end technologies as well as cloud
+                services and web design applications. A small sample of both
+                personal and professional projects can be accessed via the
+                "Projects" section of this page.
+              </p>
+              <p class="about-text" id="about-card-text2">
+                I'm sure that my expertise as well as my personality would be a
+                great benefit to your business. Whether it's refactoring old
+                code, starting new projects for clients, or finding and fixing
+                bugs... as long as I get treats and petted I can promise 100%
+                commitment to the job at hand!
+              </p>
+            </div>
+          </section>
+          <!--Projects Section-->
+          <section id="projects">
+            <div class="projects-grid-container">
+              <h2 id="projects-card-title">Projects</h2>
+              <div class="project-card" id="snap-to-it">
+                <h3>Snap To It</h3>
+                <br />
+                <a
+                  href="https://snap-2-it.com/login"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/projects/snap-to-it.png"
+                    alt="local planting planner"
+                  />
+                </a>
+              </div>
+              <div class="project-card" id="void-warrior">
+                <h3>Void Warrior</h3>
+                <br />
+                <a href="https://voidwarrior.com/" target="_blank">
+                  <img
+                    src="./assets/images/projects/void-warrior.png"
+                    alt="void warrior jrpg video game"
+                  />
+                </a>
+              </div>
+              <div class="project-card" id="volume-calc">
+                <h3>Volume Calculator</h3>
+                <br />
+                <a
+                  href="https://itsaboy.github.io/Volume-Calculator/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/projects/volume-calc.png"
+                    alt="daily and weekly lifting volume calculator"
+                  />
+                </a>
+              </div>
+              <div class="project-card" id="reseller-tool">
+                <h3>Reseller Profit Tool</h3>
+                <br />
+                <a href="https://itsaboy.github.io/caro-calc/" target="_blank">
+                  <img
+                    src="./assets/images/projects/reseller-tool.png"
+                    alt="profit calculator for resellers"
+                  />
+                </a>
+              </div>
+              <div class="project-card" id="horiseon">
+                <h3>Horiseon Page</h3>
+                <br />
+                <a
+                  href="https://itsaboy.github.io/horiseon-landing-page/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/projects/horiseon.png"
+                    alt="landing page for horiseon social solutions services"
+                  />
+                </a>
+              </div>
+            </div>
+          </section>
+          <!--Contact Section-->
+          <section id="contact">
+            <div class="contact-grid-container">
+              <h2 id="contact-heading">Contact Me</h2>
+              <a
+                class="contact-link"
+                id="email"
+                href="https://accounts.google.com/v3/signin/identifier?Email=example%40domain.com&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2Fexample%40domain.com&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1442105589%3A1690599736381419"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/tech-icons/gmail-name.svg"
+                  alt="gmail"
+                />
+              </a>
+              <a
+                class="contact-link"
+                id="twitter"
+                href="https://help.twitter.com/en/using-twitter/create-twitter-account"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/tech-icons/twitter-name.svg"
+                  alt="twitter"
+                />
+              </a>
+              <a
+                class="contact-link"
+                id="github-link"
+                href="https://github.com/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/tech-icons/github-name.svg"
+                  alt="github"
+                />
+              </a>
+              <a
+                class="contact-link"
+                id="linkedin"
+                href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/tech-icons/linkedin-name.svg"
+                  alt="linkedin"
+                />
+              </a>
+            </div>
+          </section>
+          <!--Technologies Section-->
+          <section id="tech">
+            <h2>Technologies</h2>
+            <br />
+            <div class="tech-flex-container">
+              <img
+                class="icon"
+                id="html"
+                src="./assets/images/tech-icons/w3_html5-name.svg"
+                alt="hyper text markup language"
+              />
+              <img
+                class="icon"
+                id="css"
+                src="./assets/images/tech-icons/w3_css-name.svg"
+                alt="cascading style sheet"
+              />
+              <img
+                class="icon"
+                id="js"
+                src="./assets/images/tech-icons/javascript-name.svg"
+                alt="javascript"
+              />
+              <img
+                class="icon"
+                id="node"
+                src="./assets/images/tech-icons/nodejs-name.svg"
+                alt="node"
+              />
+              <img
+                class="icon"
+                id="exp"
+                src="./assets/images/tech-icons/expressjs-name.svg"
+                alt="express"
+              />
+              <img
+                class="icon"
+                id="electron"
+                src="./assets/images/tech-icons/electronjs-name.svg"
+                alt="electron"
+              />
+              <img
+                class="icon"
+                id="python"
+                src="./assets/images/tech-icons/python-name.svg"
+                alt="python"
+              />
+              <img
+                class="icon"
+                id="linux"
+                src="./assets/images/tech-icons/linux-name.svg"
+                alt="linux"
+              />
+              <img
+                class="icon"
+                id="git"
+                src="./assets/images/tech-icons/git-scm-name.svg"
+                alt="git"
+              />
+              <img
+                class="icon"
+                id="github"
+                src="./assets/images/tech-icons/github-name.svg"
+                alt="github"
+              />
+              <img
+                class="icon"
+                id="docker"
+                src="./assets/images/tech-icons/docker-name.svg"
+                alt="docker"
+              />
+              <img
+                class="icon"
+                id="aws"
+                src="./assets/images/tech-icons/amazon_aws-name.svg"
+                alt="amazon web services"
+              />
+              <img
+                class="icon"
+                id="unity"
+                src="./assets/images/tech-icons/unity3d-name.svg"
+                alt="unity"
+              />
+              <img
+                class="icon"
+                id="godot"
+                src="./assets/images/tech-icons/godotengine-name.svg"
+                alt="godot"
+              />
+              <img
+                class="icon"
+                id="figma"
+                src="./assets/images/tech-icons/figma-name.svg"
+                alt="figma"
+              />
+            </div>
+          </section>
+        </div>
+      </main>
+      <!--Footer-->
+      <footer id="footer">
+        <div class="footer-flex-container">
+          <img
+            class="icon"
+            src="./assets/images/kitty-icon.svg"
+            alt="icon with an R overlapping a heart"
+          />
+          <a href="#header">Back to Top</a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
